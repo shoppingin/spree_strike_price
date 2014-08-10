@@ -1,0 +1,7 @@
+<div data-hook="admin_product_form_strike_price">
+  <%= f.field_container :strike_price do %>
+    <%= f.label :strike_price, Spree.t(:strike_price) %>
+    <%= f.text_field :strike_price, :value => number_to_currency(@product.strike_price, :unit => '') %>
+    <%= f.error_message_on :strike_price %>
+  <% end %>
+</div>
