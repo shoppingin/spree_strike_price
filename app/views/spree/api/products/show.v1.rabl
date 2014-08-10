@@ -1,5 +1,4 @@
 object @product
-cache [I18n.locale, @current_user_roles.include?('admin'), current_currency, root_object]
 
 attributes *product_attributes
 
